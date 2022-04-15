@@ -78,7 +78,7 @@ resource "null_resource" "commands" {
       host        = aws_instance.quest.public_ip
       type        = "ssh"
       user        = "ec2-user"
-      private_key = file("~/.ssh/id_rsa")
+      private_key = file("~/.ssh/id_rsa.pub")
     }
     inline = [
       "echo please wait instance userdata still loading",
