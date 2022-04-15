@@ -4,5 +4,5 @@ output "quest_ec2_publicIP" {
 
 output "lb_dns" {
   description = "Quest app access"
-  value = "Use this link to acees Quest APP: ${aws_lb.quest.dns_name}"
+  value = "Use this URL to acees Quest APP: ${aws_lb.quest.dns_name}"
 }
